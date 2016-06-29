@@ -7,12 +7,14 @@
 
 public class Zombie extends Monster{
 
-    public Zombie(int health, int damage){
-        super(health, damage);
+    public Zombie(int health, int damage, String name){
+        super(health, damage, name);
     }
 
     public String aboutMe(){
-        return "I am a Zombie with 10 health and do 5 damage!";
+        return "I am " + getName() + " the Zombie. I have " + getHealth() + " health and do " + getDamage() + " damage!";
     }
+
+
 
 }

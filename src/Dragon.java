@@ -7,13 +7,13 @@
 
 public class Dragon extends Monster{
 
-    public Dragon(int health, int damage){
-        super(health, damage);
+    public Dragon(int health, int damage, String name){
+        super(health, damage, name);
 
 
     }
     public String aboutMe(){
-        return ("I am a Dragon with " + getHealth() + " health and do " + getDamage() + " damage!");
+        return ("I am " + getName() + " the Dragon. I have " + getHealth() + " health and do " + getDamage() + " damage!");
     }
 
 

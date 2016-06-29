@@ -4,10 +4,12 @@
 public abstract class Monster {
     private int mHealth;
     private int mDamage;
+    private String mName;
 
-    public Monster(int health, int damage){
+    public Monster(int health, int damage, String name){
         mHealth = health;
         mDamage = damage;
+        mName = name;
     }
 
     public int getHealth(){
@@ -25,8 +27,15 @@ public abstract class Monster {
         mDamage = damage;
     }
 
+    public String getName(){ return mName;}
+
     //TODO: Give the Monster health and damage properties, and create a constructor
     //Health and damage should be private member variables, so remember to add the correct methods required to access private variables 
 
     public abstract String aboutMe();
+
+
+
+
+
 }
