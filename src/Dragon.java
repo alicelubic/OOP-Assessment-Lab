@@ -6,7 +6,6 @@
 //Example output for aboutMe: "I am a Dragon with 3 health and do 8 damage!"
 
 public class Dragon extends Monster{
-    Dragon dragon;
 
     public Dragon(int health, int damage){
         super(health, damage);
@@ -14,7 +13,7 @@ public class Dragon extends Monster{
 
     }
     public String aboutMe(){
-        return "I am a Dragon with 10 health and do 10 damage!";
+        return ("I am a Dragon with " + getHealth() + " health and do " + getDamage() + " damage!");
     }
 
 

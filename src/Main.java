@@ -12,10 +12,12 @@ public class Main {
         List<Monster> monsters = new ArrayList<>();
         monsters.add(new Dragon(10, 10));
         monsters.add(new Zombie(10, 8));
+        monsters.add(new Cthulhu(1000, 1000));
 
         for (Monster monster : monsters){
             System.out.println(monster.aboutMe());
         }
+
 
 
         //TODO: Loop through the array of Monsters, printing out something for each Monster

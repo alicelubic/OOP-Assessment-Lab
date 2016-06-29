@@ -6,7 +6,6 @@
 //Example output of the aboutMe method: "I am a Zombie with 4 health and do 10 damage!"
 
 public class Zombie extends Monster{
-    Zombie zombie;
 
     public Zombie(int health, int damage){
         super(health, damage);
